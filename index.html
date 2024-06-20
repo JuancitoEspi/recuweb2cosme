@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monolito</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #fff;
+        }
+
+        .monolito {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .head,
+        .body,
+        .legs {
+            border: 5px solid #5c2e01;
+            background-color: #f1c7a0;
+            border-radius: 15px;
+        }
+
+        .head {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 5px;
+            position: relative;
+        }
+
+        .corona {
+            width: 100px;
+            height: 40px;
+            background-color: #f1c7a0;
+            border: 5px solid #5c2e01;
+            border-radius: 2px;
+        }
+
+        .bajo {
+            width: 150px;
+            height: 20px;
+            background-color: #f1c7a0;
+            border: 5px solid #5c2e01;
+            border-radius: 15px;
+
+        }
+
+        .body {
+            width: 100px;
+            height: 180px;
+            position: relative;
+        }
+
+        .legs {
+            width: 80px;
+            height: 50px;
+            margin-top: 5px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .legs:before,
+        .legs:after {
+            content: '';
+            width: 20px;
+            height: 50px;
+            background-color: #f1c7a0;
+            border: 5px solid #5c2e01;
+            border-radius: 5px;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        .nombre-Nicol {
+            font-family: 'Arial', sans-serif;
+            font-size: 5rem;
+            position: relative;
+            color: #333;
+        }
+
+        .nombre-Nicol::before,
+        .nombre-Nicol::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            width: 50%;
+            height: 2px;
+            background-color: #333;
+        }
+
+        .nombre-Nicol::before {
+            left: 0;
+        }
+
+        .nombre-Nicol::after {
+            right: 0;
+        }
+
+        .arms {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: absolute;
+            top: 50px;
+            left: 10px;
+            right: 10px;
+            border-radius: 15px;
+        }
+
+        .bottle {
+            width: 30px;
+            height: 60px;
+            background-color: #f1c7a0;
+            border: 5px solid #5c2e01;
+            border-radius: 5px;
+            position: relative;
+        }
+
+        .bottle.left {
+            margin-right: 10px;
+            border-radius: 5px;
+        }
+
+        .bottle.right {
+            margin-left: 10px;
+            border-radius: 5px;
+        }
+
+        .bottle:before {
+            content: '';
+            position: absolute;
+            top: -15px;
+            left: 5px;
+            right: 5px;
+            height: 15px;
+            background-color: #f1c7a0;
+            border: 5px solid #5c2e01;
+            border-bottom: none;
+            border-radius: 5px 5px 0 0;
+        }
+
+        .pie {
+            width: 80px;
+            height: 50px;
+            margin-top: 5px;
+            display: flex;
+            justify-content: space-between;
+            background-color: #f1c7a0;
+            border: 5px solid #5c2e01;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="nombre-Nicol">Nicol</div>
+
+    <div class="monolito">
+        <div class="corona"></div>
+        <div class="head"></div>
+        <div class="body">
+            <div class="arms">
+                <div class="bottle left"></div>
+                <div class="bottle right"></div>
+            </div>
+        </div>
+        <div class="legs"></div>
+        <div class="pie-izq"></div>
+        <div class="pie-der"></div>
+        <div class="bajo"></div>
+    </div>
+</body>
+
+</html>
